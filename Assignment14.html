@@ -5,251 +5,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Menu</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            padding: 35px 15px;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #fff1e6, #ffe4e6, #fef3c7);
-            color: #292524;
-        }
-
-        .container {
-            max-width: 950px;
-            margin: auto;
-            padding: 30px;
-            background: #ffffff;
-            border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(120, 53, 15, 0.15);
-        }
-
-        h1 {
-            text-align: center;
-            color: white;
-            background: linear-gradient(90deg, #7c2d12, #c2410c);
-            padding: 22px 10px;
-            border-radius: 12px;
-            margin: 0 0 12px;
-            font-size: 34px;
-        }
-
-        .subtitle {
-            text-align: center;
-            color: #78716c;
-            margin: 0 0 28px;
-            font-size: 16px;
-        }
-
-        table {
-            width: 100%;
-            border: 2px solid #9a3412;
-            border-collapse: separate;
-            border-spacing: 3px;
-            background-color: #fed7aa;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        caption {
-            caption-side: top;
-            padding: 15px;
-            margin-bottom: 8px;
-            background: #ffedd5;
-            color: #9a3412;
-            font-size: 22px;
-            font-weight: bold;
-            border: 2px solid #fdba74;
-            border-radius: 10px;
-        }
-
-        th {
-            background-color: #9a3412;
-            color: white;
-            padding: 15px 10px;
-            font-size: 16px;
-        }
-
-        td {
-            background-color: #fffaf5;
-            padding: 13px 12px;
-            font-size: 15px;
-        }
-
-        .category {
-            text-align: center;
-            font-weight: bold;
-            color: #431407;
-            width: 28%;
-        }
-
-        .starters {
-            background-color: #fed7aa;
-        }
-
-        .main-course {
-            background-color: #bbf7d0;
-        }
-
-        .desserts {
-            background-color: #fbcfe8;
-        }
-
-        .drinks {
-            background-color: #bfdbfe;
-        }
-
-        .food-item {
-            text-align: left;
-        }
-
-        .price {
-            text-align: center;
-            font-weight: bold;
-            color: #166534;
-            white-space: nowrap;
-        }
-
-        tbody tr:hover td {
-            background-color: #ffedd5;
-        }
-
-        .footer {
-            margin-top: 28px;
-            padding-top: 18px;
-            border-top: 2px solid #fed7aa;
-            text-align: right;
-            color: #9a3412;
-            font-weight: bold;
-        }
-
-        .footer span {
-            display: inline-block;
-            padding: 10px 16px;
-            background-color: #ffedd5;
-            border-radius: 8px;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-            }
-
-            h1 {
-                font-size: 27px;
-            }
-
-            th, td {
-                padding: 10px 6px;
-                font-size: 13px;
-            }
-
-            caption {
-                font-size: 19px;
-            }
-        }
-    </style>
 </head>
 
-<body>
+<body bgcolor="#FFF1E6">
 
-    <div class="container">
+    <center>
+        <table width="90%" bgcolor="white" cellpadding="15" cellspacing="0" border="0">
+            <tr>
+                <td align="center">
 
-        <h1>Restaurant Menu</h1>
-        <p class="subtitle">Delicious Food • Fresh Ingredients • Great Taste</p>
+                    <table width="100%" bgcolor="#9A3412" cellpadding="20" cellspacing="0" border="0">
+                        <tr>
+                            <td align="center">
+                                <font color="white" size="7">
+                                    <b>RESTAURANT MENU</b>
+                                </font>
+                            </td>
+                        </tr>
+                    </table>
 
-        <table border="2" cellpadding="10" cellspacing="3">
+                    <br>
 
-            <caption>Today's Special Menu</caption>
+                    <font color="#78716C" size="4">
+                        <b>Delicious Food • Fresh Ingredients • Great Taste</b>
+                    </font>
 
-            <thead>
-                <tr>
-                    <th>Category</th>
-                    <th>Food Item</th>
-                    <th>Price (₹)</th>
-                </tr>
-            </thead>
+                    <br><br>
 
-            <tbody>
-                <!-- Starters -->
-                <tr>
-                    <td class="category starters" rowspan="3">Starters</td>
-                    <td class="food-item">Spring Rolls</td>
-                    <td class="price">120</td>
-                </tr>
-                <tr>
-                    <td class="food-item">Garlic Bread</td>
-                    <td class="price">100</td>
-                </tr>
-                <tr>
-                    <td class="food-item">Veg Soup</td>
-                    <td class="price">80</td>
-                </tr>
+                    <table width="100%" border="2" bordercolor="#9A3412"
+                           cellpadding="12" cellspacing="3" bgcolor="#FED7AA">
 
-                <!-- Main Course -->
-                <tr>
-                    <td class="category main-course" rowspan="3">Main Course</td>
-                    <td class="food-item">Paneer Butter Masala</td>
-                    <td class="price">180</td>
-                </tr>
-                <tr>
-                    <td class="food-item">Veg Biryani</td>
-                    <td class="price">150</td>
-                </tr>
-                <tr>
-                    <td class="food-item">Dal Tadka</td>
-                    <td class="price">120</td>
-                </tr>
+                        <caption>
+                            <font color="#9A3412" size="5">
+                                <b>Today's Special Menu</b>
+                            </font>
+                        </caption>
 
-                <!-- Desserts -->
-                <tr>
-                    <td class="category desserts" rowspan="3">Desserts</td>
-                    <td class="food-item">Chocolate Cake</td>
-                    <td class="price">90</td>
-                </tr>
-                <tr>
-                    <td class="food-item">Ice Cream</td>
-                    <td class="price">70</td>
-                </tr>
-                <tr>
-                    <td class="food-item">Gulab Jamun</td>
-                    <td class="price">60</td>
-                </tr>
+                        <thead>
+                            <tr bgcolor="#9A3412" align="center">
+                                <th><font color="white">Category</font></th>
+                                <th><font color="white">Food Item</font></th>
+                                <th><font color="white">Price (₹)</font></th>
+                            </tr>
+                        </thead>
 
-                <!-- Drinks -->
-                <tr>
-                    <td class="category drinks" rowspan="3">Drinks</td>
-                    <td class="food-item">Fresh Lime Soda</td>
-                    <td class="price">50</td>
-                </tr>
-                <tr>
-                    <td class="food-item">Cold Coffee</td>
-                    <td class="price">80</td>
-                </tr>
-                <tr>
-                    <td class="food-item">Mango Shake</td>
-                    <td class="price">70</td>
-                </tr>
+                        <tbody>
+                            <tr bgcolor="#FFF7ED" align="center">
+                                <td rowspan="3" bgcolor="#FED7AA">
+                                    <b>Starters</b>
+                                </td>
+                                <td align="left">Spring Rolls</td>
+                                <td><font color="green"><b>120</b></font></td>
+                            </tr>
+                            <tr bgcolor="#FFF7ED" align="center">
+                                <td align="left">Garlic Bread</td>
+                                <td><font color="green"><b>100</b></font></td>
+                            </tr>
+                            <tr bgcolor="#FFF7ED" align="center">
+                                <td align="left">Veg Soup</td>
+                                <td><font color="green"><b>80</b></font></td>
+                            </tr>
 
-                <!-- Special note using colspan -->
-                <tr>
-                    <td colspan="3" style="text-align:center; background:#ffedd5; font-weight:bold;">
-                        Freshly Prepared • Quality Ingredients • Enjoy Your Meal!
-                    </td>
-                </tr>
-            </tbody>
+                            <tr bgcolor="#F0FDF4" align="center">
+                                <td rowspan="3" bgcolor="#BBF7D0">
+                                    <b>Main Course</b>
+                                </td>
+                                <td align="left">Paneer Butter Masala</td>
+                                <td><font color="green"><b>180</b></font></td>
+                            </tr>
+                            <tr bgcolor="#F0FDF4" align="center">
+                                <td align="left">Veg Biryani</td>
+                                <td><font color="green"><b>150</b></font></td>
+                            </tr>
+                            <tr bgcolor="#F0FDF4" align="center">
+                                <td align="left">Dal Tadka</td>
+                                <td><font color="green"><b>120</b></font></td>
+                            </tr>
 
+                            <tr bgcolor="#FDF2F8" align="center">
+                                <td rowspan="3" bgcolor="#FBCFE8">
+                                    <b>Desserts</b>
+                                </td>
+                                <td align="left">Chocolate Cake</td>
+                                <td><font color="green"><b>90</b></font></td>
+                            </tr>
+                            <tr bgcolor="#FDF2F8" align="center">
+                                <td align="left">Ice Cream</td>
+                                <td><font color="green"><b>70</b></font></td>
+                            </tr>
+                            <tr bgcolor="#FDF2F8" align="center">
+                                <td align="left">Gulab Jamun</td>
+                                <td><font color="green"><b>60</b></font></td>
+                            </tr>
+
+                            <tr bgcolor="#EFF6FF" align="center">
+                                <td rowspan="3" bgcolor="#BFDBFE">
+                                    <b>Drinks</b>
+                                </td>
+                                <td align="left">Fresh Lime Soda</td>
+                                <td><font color="green"><b>50</b></font></td>
+                            </tr>
+                            <tr bgcolor="#EFF6FF" align="center">
+                                <td align="left">Cold Coffee</td>
+                                <td><font color="green"><b>80</b></font></td>
+                            </tr>
+                            <tr bgcolor="#EFF6FF" align="center">
+                                <td align="left">Mango Shake</td>
+                                <td><font color="green"><b>70</b></font></td>
+                            </tr>
+
+                            <tr bgcolor="#FFEDD5">
+                                <td colspan="3" align="center">
+                                    <font color="#9A3412">
+                                        <b>Freshly Prepared • Quality Ingredients • Enjoy Your Meal!</b>
+                                    </font>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <br><br>
+                    <hr color="#FED7AA">
+
+                    <p align="right">
+                        <font color="#9A3412" size="4">
+                            <b>Made by Aadesh Roda</b>
+                        </font>
+                    </p>
+
+                </td>
+            </tr>
         </table>
-
-        <div class="footer">
-            <span>Made by Aadesh Roda</span>
-        </div>
-
-    </div>
+    </center>
 
 </body>
 </html>
